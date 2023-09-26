@@ -4,8 +4,8 @@ function Keyboard() {
   return (
     <>
       <div className="container">
-        {keys.map((key) => (
-          <button type='button' className='btn btn-primary' style={{margin: '0.5rem'}}>{key}</button>
+        {keys.map((char) => (
+          <button type='button' className='btn btn-primary' style={{margin: '0.2rem', padding: '3rem'}} key={char}>{char}</button>
         ))}
       </div>
     </>
