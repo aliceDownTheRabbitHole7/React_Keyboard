@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+html {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.keyboard_container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+}
+
+.btn-key {
+    margin: 0.2rem;
+    width: 9%;
+    height: 5rem;
+}
+
