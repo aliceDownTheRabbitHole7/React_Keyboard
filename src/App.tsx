@@ -1,4 +1,5 @@
 import Keyboard from "./keyboard";
+import NumberPad from "./components/num-pad/num-pad";
 import './App.css';
 
 function App() {
@@ -33,7 +34,29 @@ function App() {
     "."
   ];
 
-  return <div><Keyboard items={keys} heading="React Keyboard"/></div>
+  const numbers = [
+    '7',
+    '8',
+    '9',
+    '4',
+    '5',
+    '6',
+    '1',
+    '2',
+    '3',
+    '0'
+  ];
+
+  const handleSelectItem = (item: string) => {
+    console.log(item);
+  }
+
+  return (
+  <div className='flex-pad'>
+    <Keyboard items={keys} heading="React Keyboard" onSelectItem={handleSelectItem}/>
+    <NumberPad items={numbers} heading="Number Pad" onSelectItem={handleSelectItem}/>
+  </div>
+  );
 }
 
 export default App;

@@ -3,20 +3,43 @@
 html {
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
 }
-
-.keyboard_container {
+.flex-pad {
     display: flex;
-    flex-wrap: wrap;
-    font-family: 'Merriweather', serif;
-    justify-content: center;
+    flex-wrap: nowrap;
+    border: 1px solid yellow;
 }
 
+
+.keyboard_container {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    border: 1px solid blueviolet;
+}
 .btn-key {
     margin: 0.2rem;
     width: 9%;
     height: 5rem;
+}
+
+
+.num-container {
+    font-family: 'Merriweather', serif;
+    border: 1px solid red;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.num-key {
+    margin: 0.1rem;
+    width: 25%;
+    height: 4rem;
 }
 
