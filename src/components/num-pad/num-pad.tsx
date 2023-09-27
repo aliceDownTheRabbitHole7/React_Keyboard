@@ -23,7 +23,8 @@ function NumberPad({ items, heading, onSelectItem }: Props) {
               }
               key={char}
               onClick={() => {
-                setIndex(index)
+                setIndex(index);
+                onSelectItem(char);
               }}
             >
               {char}
